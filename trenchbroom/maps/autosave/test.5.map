@@ -1,0 +1,258 @@
+// Game: fire2
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"wad" ""
+"classname" "worldspawn"
+"_tb_mod" "trenchbroom"
+// brush 0
+{
+( -416 -64 -16 ) ( -416 -63 -16 ) ( -416 -64 -15 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 90 0.1 0.1
+( -64 -352 -16 ) ( -64 -352 -15 ) ( -63 -352 -16 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 0.1 0.1
+( -64 -64 0 ) ( -63 -64 0 ) ( -64 -63 0 ) kenney_protoype_textures/PNG/Dark/texture_08 [ -1 0 0 0 ] [ 0 -1 0 0 ] 270 0.1 0.1
+( 64 64 16 ) ( 64 65 16 ) ( 65 64 16 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 0.1 0.1
+( 64 64 16 ) ( 65 64 16 ) ( 64 64 17 ) kenney_protoype_textures/PNG/Dark/texture_08 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 0.1 0.1
+( 112 64 16 ) ( 112 64 17 ) ( 112 65 16 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 0.1 0.1
+}
+// brush 1
+{
+( -416 -272 16 ) ( -416 -271 16 ) ( -416 -272 17 ) kenney_protoype_textures/PNG/Purple/texture_08 [ 0 -1 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( -416 -256 16 ) ( -416 -256 17 ) ( -415 -256 16 ) kenney_protoype_textures/PNG/Purple/texture_08 [ 1 0 0 192 ] [ 0 0 -1 0 ] 270 1 1
+( -416 -272 16 ) ( -415 -272 16 ) ( -416 -271 16 ) kenney_protoype_textures/PNG/Purple/texture_08 [ -1 0 0 -192 ] [ 0 -1 0 -16 ] 0 1 1
+( -384 48 80 ) ( -384 49 80 ) ( -383 48 80 ) kenney_protoype_textures/PNG/Purple/texture_08 [ 1 0 0 192 ] [ 0 -1 0 -16 ] 270 1 1
+( -384 368 32 ) ( -383 368 32 ) ( -384 368 33 ) kenney_protoype_textures/PNG/Purple/texture_08 [ -1 0 0 -192 ] [ 0 0 -1 0 ] 180 1 1
+( -400 48 32 ) ( -400 48 33 ) ( -400 49 32 ) kenney_protoype_textures/PNG/Purple/texture_08 [ 0 1 0 16 ] [ 0 0 -1 0 ] 270 1 1
+}
+// brush 2
+{
+( -416 -256 80 ) ( -416 -255 80 ) ( -416 -256 81 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 0 -1 0 64 ] [ 0 0 -1 64 ] 270 0.1 0.1
+( -400 -256 80 ) ( -400 -256 81 ) ( -399 -256 80 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1 0 0 960 ] [ 0 0 -1 64 ] 0 0.1 0.1
+( -400 -256 80 ) ( -399 -256 80 ) ( -400 -255 80 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1 0 0 -832 ] [ 0 -1 0 64 ] 0 0.1 0.1
+( -368 -192 96 ) ( -368 -191 96 ) ( -367 -192 96 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1 0 0 960 ] [ 0 -1 0 64 ] 0 0.1 0.1
+( -368 -192 96 ) ( -367 -192 96 ) ( -368 -192 97 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1 0 0 -832 ] [ 0 0 -1 64 ] 0 0.1 0.1
+( -368 -192 96 ) ( -368 -192 97 ) ( -368 -191 96 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 0 1 0 64 ] [ 0 0 -1 64 ] 0 0.1 0.1
+}
+// brush 3
+{
+( -342.40000000000003 -256 80 ) ( -342.40000000000003 -255 80 ) ( -344 -256 81 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 0 -1 0 384 ] [ -1 0 -2.220446049250313e-16 -352 ] 204.88086 0.1 0.1
+( -342.40000000000003 -256 80 ) ( -344 -256 81 ) ( -341.40000000000003 -256 80 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1 0 1.5999999999999999 480 ] [ 0 0 -1 64 ] 57.105103 0.1 0.1
+( -240 -256 16 ) ( -239 -256 16 ) ( -240 -255 16 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1.5999999999999996 0 -1.0000000000000002 320 ] [ 0 -1 0 384 ] 13.054626 0.1 0.1
+( -352 -192 96 ) ( -352 -191 96 ) ( -351 -192 96 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1.5999999999999996 0 1.0000000000000002 -192 ] [ 0 -1 0 384 ] 166.94537 0.1 0.1
+( -352 -192 96 ) ( -351 -192 96 ) ( -353.59999999999997 -192 97 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1 0 -1.5999999999999999 -352 ] [ 0 0 -1 64 ] 302.8952 0.1 0.1
+( -352 -192 96 ) ( -353.59999999999997 -192 97 ) ( -352 -191 96 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 0 1 0 -256 ] [ -1 0 -2.220446049250313e-16 -352 ] 155.11914 0.1 0.1
+}
+// brush 4
+{
+( -224 -48 16 ) ( -224 -47 16 ) ( -224 -48 17 ) kenney_protoype_textures/PNG/Green/texture_04 [ 0 -1 0 -160 ] [ 0 0 -1 -800 ] 0 0.1 0.1
+( -224 -128 16 ) ( -224 -128 17 ) ( -223 -128 16 ) kenney_protoype_textures/PNG/Green/texture_04 [ 1 0 0 0 ] [ 0 0 -1 -800 ] 270 0.1 0.1
+( -224 -48 16 ) ( -223 -48 16 ) ( -224 -47 16 ) kenney_protoype_textures/PNG/Green/texture_04 [ -1 0 0 0 ] [ 0 -1 0 -160 ] 0 0.1 0.1
+( -192 48 80 ) ( -192 49 80 ) ( -191 48 80 ) kenney_protoype_textures/PNG/Green/texture_04 [ 1 0 0 0 ] [ 0 -1 0 -160 ] 270 0.1 0.1
+( -192 48 32 ) ( -191 48 32 ) ( -192 48 33 ) kenney_protoype_textures/PNG/Green/texture_04 [ -1 0 0 0 ] [ 0 0 -1 -800 ] 0 0.1 0.1
+( -208 48 32 ) ( -208 48 33 ) ( -208 49 32 ) kenney_protoype_textures/PNG/Green/texture_04 [ 0 1 0 160 ] [ 0 0 -1 -800 ] 270 0.1 0.1
+}
+// brush 5
+{
+( -128 -176 16 ) ( -128 -176 17 ) ( -128 -177 16 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1.8369701987210297e-16 -1 0 -928 ] [ 0 0 -1 -800 ] 180 0.1 0.1
+( 48 -192 32 ) ( 48 -192 33 ) ( 49 -192 32 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1 -1.8369701987210297e-16 0 160 ] [ 0 0 -1 -800 ] 180 0.1 0.1
+( -48 -176 16 ) ( -48 -177 16 ) ( -47 -176 16 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1.8369701987210297e-16 1 0 928 ] [ -1 1.8369701987210297e-16 0 -160 ] 180 0.1 0.1
+( 48 -208 80 ) ( 49 -208 80 ) ( 48 -209 80 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1.8369701987210297e-16 -1 0 -928 ] [ -1 1.8369701987210297e-16 0 -160 ] 270 0.1 0.1
+( -48 -176 16 ) ( -47 -176 16 ) ( -48 -176 17 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1 1.8369701987210297e-16 0 -160 ] [ 0 0 -1 -800 ] 270 0.1 0.1
+( 32 -208 32 ) ( 32 -209 32 ) ( 32 -208 33 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1.8369701987210297e-16 1 0 928 ] [ 0 0 -1 -800 ] 180 0.1 0.1
+}
+// brush 6
+{
+( -416 -384 0 ) ( -416 -383 0 ) ( -416 -384 1 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -416 -656 0 ) ( -416 -656 1 ) ( -415 -656 0 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 1 0 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( -416 -384 0 ) ( -415 -384 0 ) ( -416 -383 0 ) kenney_protoype_textures/PNG/Dark/texture_08 [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -256 -352 16 ) ( -256 -351 16 ) ( -255 -352 16 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -256 -352 16 ) ( -255 -352 16 ) ( -256 -352 17 ) kenney_protoype_textures/PNG/Dark/texture_08 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -144 -352 16 ) ( -144 -352 17 ) ( -144 -351 16 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+// brush 7
+{
+( -416 336 0 ) ( -416 337 0 ) ( -416 336 1 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 0 -1 0 720 ] [ 0 0 -1 0 ] 0 1 1
+( -416 64 0 ) ( -416 64 1 ) ( -415 64 0 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 1 0 0 0 ] [ 0 0 -1 0 ] 180 1 1
+( -416 336 0 ) ( -415 336 0 ) ( -416 337 0 ) kenney_protoype_textures/PNG/Dark/texture_08 [ -1 0 0 0 ] [ 0 -1 0 720 ] 0 1 1
+( -256 368 16 ) ( -256 369 16 ) ( -255 368 16 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 1 0 0 0 ] [ 0 -1 0 720 ] 0 1 1
+( -256 368 16 ) ( -255 368 16 ) ( -256 368 17 ) kenney_protoype_textures/PNG/Dark/texture_08 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 352 368 16 ) ( 352 368 17 ) ( 352 369 16 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 0 1 0 -720 ] [ 0 0 -1 0 ] 270 1 1
+}
+// brush 8
+{
+( 124.80000000000001 112 80 ) ( 124.80000000000001 113 80 ) ( 123 112 81 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 0 -1 0 -32 ] [ -1 0 -0.20000000000000023 384 ] 18.01294 0.1 0.1
+( 124.80000000000001 112 80 ) ( 123 112 81 ) ( 125.80000000000001 112 80 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1 0 1.7999999999999998 -256 ] [ 0 0 -1 64 ] 82.55484 0.1 0.1
+( 240 112 16 ) ( 241 112 16 ) ( 240 113 16 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1.5999999999999996 0 -0.6800000000000005 -243.19995 ] [ 0 -1 0 -32 ] 184.45886 0.1 0.1
+( 112 176 96 ) ( 112 177 96 ) ( 113 176 96 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1.5999999999999996 0 0.6800000000000005 371.19995 ] [ 0 -1 0 -32 ] 355.54114 0.1 0.1
+( 112 176 96 ) ( 113 176 96 ) ( 110.2 176 97 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1 0 -1.7999999999999998 384 ] [ 0 0 -1 64 ] 277.44617 0.1 0.1
+( 112 176 96 ) ( 110.2 176 97 ) ( 112 177 96 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 0 1 0 160 ] [ -1 0 -0.20000000000000023 384 ] 341.98706 0.1 0.1
+}
+// brush 9
+{
+( 288 -304 0 ) ( 288 -303 0 ) ( 288 -304 1 ) kenney_protoype_textures/PNG/Dark/texture_07 [ 0 -1 0 0 ] [ 0 0 -1 -160 ] 270 0.1 0.1
+( 288 -304 0 ) ( 288 -304 1 ) ( 289 -304 0 ) kenney_protoype_textures/PNG/Dark/texture_07 [ 1 0 0 -640 ] [ 0 0 -1 -160 ] 270 0.1 0.1
+( 288 -304 0 ) ( 289 -304 0 ) ( 288 -303 0 ) kenney_protoype_textures/PNG/Dark/texture_07 [ -1 0 0 640 ] [ 0 -1 0 0 ] 270 0.1 0.1
+( 352 48 16 ) ( 352 49 16 ) ( 353 48 16 ) kenney_protoype_textures/PNG/Dark/texture_07 [ 1 0 0 -640 ] [ 0 -1 0 0 ] 270 0.1 0.1
+( 352 64 16 ) ( 353 64 16 ) ( 352 64 17 ) kenney_protoype_textures/PNG/Dark/texture_07 [ -1 0 0 640 ] [ 0 0 -1 -160 ] 180 0.1 0.1
+( 352 48 16 ) ( 352 48 17 ) ( 352 49 16 ) kenney_protoype_textures/PNG/Dark/texture_07 [ 0 1 0 0 ] [ 0 0 -1 -160 ] 270 0.1 0.1
+}
+}
+// entity 1
+{
+"classname" "fade_wall"
+// brush 0
+{
+( -224 208 32 ) ( -224 209 32 ) ( -224 208 33 ) kenney_protoype_textures/PNG/Orange/texture_09 [ -6.123233995736766e-17 -1 0 528 ] [ 0 0 -1 0 ] 270 0.1 0.1
+( 96 176 16 ) ( 95 176 16 ) ( 96 176 17 ) kenney_protoype_textures/PNG/Orange/texture_09 [ 1 -6.123233995736766e-17 0 160 ] [ 0 0 -1 0 ] 270 0.1 0.1
+( 96 176 16 ) ( 96 177 16 ) ( 95 176 16 ) kenney_protoype_textures/PNG/Orange/texture_09 [ -6.123233995736766e-17 -1 0 528 ] [ 1 -6.123233995736766e-17 0 160 ] 0 0.1 0.1
+( -224 208 96 ) ( -225 208 96 ) ( -224 209 96 ) kenney_protoype_textures/PNG/Orange/texture_09 [ 6.123233995736766e-17 1 0 -528 ] [ 1 -6.123233995736766e-17 0 160 ] 180 0.1 0.1
+( -224 192 32 ) ( -224 192 33 ) ( -225 192 32 ) kenney_protoype_textures/PNG/Orange/texture_09 [ -1 6.123233995736766e-17 0 -160 ] [ 0 0 -1 0 ] 180 0.1 0.1
+( 112 176 16 ) ( 112 176 17 ) ( 112 177 16 ) kenney_protoype_textures/PNG/Orange/texture_09 [ 6.123233995736766e-17 1 0 -528 ] [ 0 0 -1 0 ] 90 0.1 0.1
+}
+}
+// entity 2
+{
+"classname" "fade_wall"
+// brush 0
+{
+( -224 208 112 ) ( -224 209 112 ) ( -224 208 113 ) kenney_protoype_textures/PNG/Orange/texture_09 [ -6.123233995736766e-17 -1 0 528 ] [ 0 0 -1 800 ] 90 0.1 0.1
+( 96 176 96 ) ( 95 176 96 ) ( 96 176 97 ) kenney_protoype_textures/PNG/Orange/texture_09 [ 1 -6.123233995736766e-17 0 160 ] [ 0 0 -1 800 ] 90 0.1 0.1
+( 96 176 96 ) ( 96 177 96 ) ( 95 176 96 ) kenney_protoype_textures/PNG/Orange/texture_09 [ -6.123233995736766e-17 -1 0 528 ] [ 1 -6.123233995736766e-17 0 160 ] 180 0.1 0.1
+( -224 208 176 ) ( -225 208 176 ) ( -224 209 176 ) kenney_protoype_textures/PNG/Orange/texture_09 [ 6.123233995736766e-17 1 0 -528 ] [ 1 -6.123233995736766e-17 0 160 ] 180 0.1 0.1
+( -224 192 112 ) ( -224 192 113 ) ( -225 192 112 ) kenney_protoype_textures/PNG/Orange/texture_09 [ -1 6.123233995736766e-17 0 -160 ] [ 0 0 -1 800 ] 0 0.1 0.1
+( 112 176 96 ) ( 112 176 97 ) ( 112 177 96 ) kenney_protoype_textures/PNG/Orange/texture_09 [ 6.123233995736766e-17 1 0 -528 ] [ 0 0 -1 800 ] 270 0.1 0.1
+}
+}
+// entity 3
+{
+"classname" "fade_wall"
+// brush 0
+{
+( -208 -176 96 ) ( -208 -176 97 ) ( -208 -177 96 ) kenney_protoype_textures/PNG/Green/texture_11 [ -1.8369701987210297e-16 -1 0 -928 ] [ 0 0 -1 0 ] 0 0.1 0.1
+( 48 -192 112 ) ( 48 -192 113 ) ( 49 -192 112 ) kenney_protoype_textures/PNG/Green/texture_11 [ 1 -1.8369701987210297e-16 0 160 ] [ 0 0 -1 0 ] 90 0.1 0.1
+( -48 -176 96 ) ( -48 -177 96 ) ( -47 -176 96 ) kenney_protoype_textures/PNG/Green/texture_11 [ 1.8369701987210297e-16 1 0 928 ] [ -1 1.8369701987210297e-16 0 -160 ] 90 0.1 0.1
+( 48 -208 160 ) ( 49 -208 160 ) ( 48 -209 160 ) kenney_protoype_textures/PNG/Green/texture_11 [ -1.8369701987210297e-16 -1 0 -928 ] [ -1 1.8369701987210297e-16 0 -160 ] 180 0.1 0.1
+( -48 -176 96 ) ( -47 -176 96 ) ( -48 -176 97 ) kenney_protoype_textures/PNG/Green/texture_11 [ -1 1.8369701987210297e-16 0 -160 ] [ 0 0 -1 0 ] 180 0.1 0.1
+( 48 -208 112 ) ( 48 -209 112 ) ( 48 -208 113 ) kenney_protoype_textures/PNG/Green/texture_11 [ 1.8369701987210297e-16 1 0 928 ] [ 0 0 -1 0 ] 180 0.1 0.1
+}
+}
+// entity 4
+{
+"classname" "fade_floor"
+// brush 0
+{
+( -416 -256 80 ) ( -416 -255 80 ) ( -416 -256 81 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 180 0.1 0.1
+( -208 -192 80 ) ( -208 -192 81 ) ( -207 -192 80 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 0.1 0.1
+( -208 -256 80 ) ( -207 -256 80 ) ( -208 -255 80 ) kenney_protoype_textures/PNG/Dark/texture_08 [ -1 0 0 0 ] [ 0 -1 0 0 ] 90 0.1 0.1
+( -192 48 96 ) ( -192 49 96 ) ( -191 48 96 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 0.1 0.1
+( -192 48 96 ) ( -191 48 96 ) ( -192 48 97 ) kenney_protoype_textures/PNG/Dark/texture_08 [ -1 0 0 0 ] [ 0 0 -1 0 ] 180 0.1 0.1
+( 96 48 96 ) ( 96 48 97 ) ( 96 49 96 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 0.1 0.1
+}
+}
+// entity 5
+{
+"classname" "fade_wall"
+// brush 0
+{
+( 96 -272 16 ) ( 96 -271 16 ) ( 96 -272 17 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 0 -1 0 -16 ] [ 0 0 -1 0 ] 270 1 1
+( 96 -192 16 ) ( 96 -192 17 ) ( 97 -192 16 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1 0 0 -320 ] [ 0 0 -1 0 ] 90 1 1
+( 96 -272 16 ) ( 97 -272 16 ) ( 96 -271 16 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1 0 0 320 ] [ 0 -1 0 -16 ] 270 1 1
+( 128 48 96 ) ( 128 49 96 ) ( 129 48 96 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1 0 0 -320 ] [ 0 -1 0 -16 ] 0 1 1
+( 128 48 32 ) ( 129 48 32 ) ( 128 48 33 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1 0 0 320 ] [ 0 0 -1 0 ] 270 1 1
+( 112 48 32 ) ( 112 48 33 ) ( 112 49 32 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 0 1 0 16 ] [ 0 0 -1 0 ] 180 1 1
+}
+}
+// entity 6
+{
+"classname" "fade_wall"
+// brush 0
+{
+( -160 -240 32 ) ( -160 -239 32 ) ( -160 -240 33 ) kenney_protoype_textures/PNG/Orange/texture_13 [ -6.123233995736766e-17 -1 0 -48 ] [ 0 0 -1 0 ] 270 1 1
+( 96 -272 16 ) ( 95 -272 16 ) ( 96 -272 17 ) kenney_protoype_textures/PNG/Orange/texture_13 [ 1 -6.123233995736766e-17 0 160 ] [ 0 0 -1 0 ] 90 1 1
+( 96 -272 16 ) ( 96 -271 16 ) ( 95 -272 16 ) kenney_protoype_textures/PNG/Orange/texture_13 [ -6.123233995736766e-17 -1 0 -48 ] [ 1 -6.123233995736766e-17 0 160 ] 180 1 1
+( -224 -240 96 ) ( -225 -240 96 ) ( -224 -239 96 ) kenney_protoype_textures/PNG/Orange/texture_13 [ 6.123233995736766e-17 1 0 48 ] [ 1 -6.123233995736766e-17 0 160 ] 180 1 1
+( -224 -256 32 ) ( -224 -256 33 ) ( -225 -256 32 ) kenney_protoype_textures/PNG/Orange/texture_13 [ -1 6.123233995736766e-17 0 -160 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -272 16 ) ( 64 -272 17 ) ( 64 -271 16 ) kenney_protoype_textures/PNG/Orange/texture_13 [ 6.123233995736766e-17 1 0 48 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 7
+{
+"classname" "fade_wall"
+// brush 0
+{
+( -416 -48 96 ) ( -416 -47 96 ) ( -416 -48 97 ) kenney_protoype_textures/PNG/Orange/texture_13 [ 0 -1 0 -160 ] [ 0 0 -1 0 ] 90 0.1 0.1
+( -416 -256 96 ) ( -416 -256 97 ) ( -415 -256 96 ) kenney_protoype_textures/PNG/Orange/texture_13 [ 1 0 0 896 ] [ 0 0 -1 0 ] 180 0.1 0.1
+( -416 -48 96 ) ( -415 -48 96 ) ( -416 -47 96 ) kenney_protoype_textures/PNG/Orange/texture_13 [ -1 0 0 -896 ] [ 0 -1 0 -160 ] 90 0.1 0.1
+( -384 48 160 ) ( -384 49 160 ) ( -383 48 160 ) kenney_protoype_textures/PNG/Orange/texture_13 [ 1 0 0 896 ] [ 0 -1 0 -160 ] 0 0.1 0.1
+( -384 48 112 ) ( -383 48 112 ) ( -384 48 113 ) kenney_protoype_textures/PNG/Orange/texture_13 [ -1 0 0 -896 ] [ 0 0 -1 0 ] 90 0.1 0.1
+( -400 48 112 ) ( -400 48 113 ) ( -400 49 112 ) kenney_protoype_textures/PNG/Orange/texture_13 [ 0 1 0 160 ] [ 0 0 -1 0 ] 0 0.1 0.1
+}
+}
+// entity 8
+{
+"classname" "fade_wall"
+// brush 0
+{
+( -160 -240 112 ) ( -160 -239 112 ) ( -160 -240 113 ) kenney_protoype_textures/PNG/Orange/texture_13 [ -6.123233995736766e-17 -1 0 -48 ] [ 0 0 -1 80 ] 0 1 1
+( 96 -272 96 ) ( 95 -272 96 ) ( 96 -272 97 ) kenney_protoype_textures/PNG/Orange/texture_13 [ 1 -6.123233995736766e-17 0 160 ] [ 0 0 -1 80 ] 180 1 1
+( 96 -272 96 ) ( 96 -271 96 ) ( 95 -272 96 ) kenney_protoype_textures/PNG/Orange/texture_13 [ -6.123233995736766e-17 -1 0 -48 ] [ 1 -6.123233995736766e-17 0 160 ] 270 1 1
+( -224 -240 176 ) ( -225 -240 176 ) ( -224 -239 176 ) kenney_protoype_textures/PNG/Orange/texture_13 [ 6.123233995736766e-17 1 0 48 ] [ 1 -6.123233995736766e-17 0 160 ] 270 1 1
+( -224 -256 112 ) ( -224 -256 113 ) ( -225 -256 112 ) kenney_protoype_textures/PNG/Orange/texture_13 [ -1 6.123233995736766e-17 0 -160 ] [ 0 0 -1 80 ] 90 1 1
+( 64 -272 96 ) ( 64 -272 97 ) ( 64 -271 96 ) kenney_protoype_textures/PNG/Orange/texture_13 [ 6.123233995736766e-17 1 0 48 ] [ 0 0 -1 80 ] 90 1 1
+}
+}
+// entity 9
+{
+"classname" "fade_floor"
+// brush 0
+{
+( -416 -128 80 ) ( -416 -127 80 ) ( -416 -128 81 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 0 -1 0 256 ] [ 0 0 -1 0 ] 0 0.1 0.1
+( -208 48 80 ) ( -208 48 81 ) ( -207 48 80 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 0.1 0.1
+( -208 -128 80 ) ( -207 -128 80 ) ( -208 -127 80 ) kenney_protoype_textures/PNG/Dark/texture_08 [ -1 0 0 0 ] [ 0 -1 0 256 ] 270 0.1 0.1
+( -192 176 96 ) ( -192 177 96 ) ( -191 176 96 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 1 0 0 0 ] [ 0 -1 0 256 ] 270 0.1 0.1
+( -192 176 96 ) ( -191 176 96 ) ( -192 176 97 ) kenney_protoype_textures/PNG/Dark/texture_08 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 0.1 0.1
+( 96 176 96 ) ( 96 176 97 ) ( 96 177 96 ) kenney_protoype_textures/PNG/Dark/texture_08 [ 0 1 0 -256 ] [ 0 0 -1 0 ] 270 0.1 0.1
+}
+}
+// entity 10
+{
+"classname" "fade_wall"
+// brush 0
+{
+( 96 -272 96 ) ( 96 -271 96 ) ( 96 -272 97 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 0 -1 0 -16 ] [ 0 0 -1 80 ] 0 1 1
+( 96 -192 96 ) ( 96 -192 97 ) ( 97 -192 96 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1 0 0 -320 ] [ 0 0 -1 80 ] 180 1 1
+( 96 -272 96 ) ( 97 -272 96 ) ( 96 -271 96 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1 0 0 320 ] [ 0 -1 0 -16 ] 0 1 1
+( 128 48 176 ) ( 128 49 176 ) ( 129 48 176 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 1 0 0 -320 ] [ 0 -1 0 -16 ] 90 1 1
+( 128 48 112 ) ( 129 48 112 ) ( 128 48 113 ) kenney_protoype_textures/PNG/Purple/texture_01 [ -1 0 0 320 ] [ 0 0 -1 80 ] 0 1 1
+( 112 48 112 ) ( 112 48 113 ) ( 112 49 112 ) kenney_protoype_textures/PNG/Purple/texture_01 [ 0 1 0 16 ] [ 0 0 -1 80 ] 270 1 1
+}
+}
+// entity 11
+{
+"classname" "obj_glass"
+// brush 0
+{
+( -301 -64 96 ) ( -301 -63 96 ) ( -301 -64 97 ) __TB_empty [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -301 -64 96 ) ( -301 -64 97 ) ( -300 -64 96 ) __TB_empty [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -301 -64 96 ) ( -300 -64 96 ) ( -301 -63 96 ) __TB_empty [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -297 110 208 ) ( -297 111 208 ) ( -296 110 208 ) __TB_empty [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( -297 110 97 ) ( -296 110 97 ) ( -297 110 98 ) __TB_empty [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -297 110 97 ) ( -297 110 98 ) ( -297 111 97 ) __TB_empty [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 12
+{
+"classname" "func_move"
+"move_pos" "5.0 0.0 0.0"
+"target" ""
+"targetname" "FGD_move0"
+// brush 0
+{
+( 112 -96 0 ) ( 112 -95 0 ) ( 112 -96 1 ) kenney_protoype_textures/PNG/Green/texture_11 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 0.1 0.1
+( 112 -192 0 ) ( 112 -192 1 ) ( 113 -192 0 ) kenney_protoype_textures/PNG/Green/texture_11 [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 0.1 0.1
+( 112 -96 0 ) ( 113 -96 0 ) ( 112 -95 0 ) kenney_protoype_textures/PNG/Green/texture_11 [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 0.1 0.1
+( 288 64 16 ) ( 288 65 16 ) ( 289 64 16 ) kenney_protoype_textures/PNG/Green/texture_11 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 0.1 0.1
+( 288 64 16 ) ( 289 64 16 ) ( 288 64 17 ) kenney_protoype_textures/PNG/Green/texture_11 [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 0.1 0.1
+( 288 64 16 ) ( 288 64 17 ) ( 288 65 16 ) kenney_protoype_textures/PNG/Green/texture_11 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 0.1 0.1
+}
+}

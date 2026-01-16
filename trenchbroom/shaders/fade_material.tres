@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bo61nvbh7g2ar"]
+
+[ext_resource type="Shader" uid="uid://c6trftmkpdfki" path="res://trenchbroom/shaders/fade.gdshader" id="1_kd0d4"]
+
+[resource]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("1_kd0d4")
+shader_parameter/opacity = 1.0

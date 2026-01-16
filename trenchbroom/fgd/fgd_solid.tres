@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDFile" load_steps=12 format=3 uid="uid://cnrh5xw6qygo7"]
+
+[ext_resource type="Resource" uid="uid://bdji3873bg32h" path="res://addons/func_godot/fgd/worldspawn.tres" id="1_bib3t"]
+[ext_resource type="Resource" uid="uid://bv37jafqtfyuw" path="res://trenchbroom/fgd/solid/funcs/func_detail.tres" id="1_urecy"]
+[ext_resource type="Resource" uid="uid://4h23glniadlk" path="res://trenchbroom/fgd/solid/funcs/func_detail_illusionary.tres" id="2_bib3t"]
+[ext_resource type="Resource" uid="uid://dbc8wa7c1nbgx" path="res://trenchbroom/fgd/solid/funcs/func_geo.tres" id="3_t6ifc"]
+[ext_resource type="Resource" uid="uid://ckh3askbgkynt" path="res://trenchbroom/fgd/solid/funcs/func_illusionary.tres" id="4_tg75m"]
+[ext_resource type="Resource" uid="uid://b3t000ocefkge" path="res://trenchbroom/fgd/solid/funcs/func_move.tres" id="5_3sm66"]
+[ext_resource type="Resource" uid="uid://ptvum0fd8lvk" path="res://trenchbroom/fgd/solid/triggers/trigger_area.tres" id="6_gsodn"]
+[ext_resource type="Script" uid="uid://drlmgulwbjwqu" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="7_82tb1"]
+[ext_resource type="Resource" uid="uid://boja1jur24s2h" path="res://trenchbroom/fgd/solid/fades/fade_wall.tres" id="8_1or8k"]
+[ext_resource type="Resource" uid="uid://yegvf3koat4" path="res://trenchbroom/fgd/solid/fades/fade_floor.tres" id="9_2133o"]
+[ext_resource type="Resource" uid="uid://binnukaqhn7i4" path="res://trenchbroom/fgd/solid/obj/obj_glass.tres" id="10_2133o"]
+
+[resource]
+script = ExtResource("7_82tb1")
+fgd_name = "SolidFGD"
+entity_definitions = Array[Resource]([ExtResource("1_bib3t"), ExtResource("1_urecy"), ExtResource("2_bib3t"), ExtResource("3_t6ifc"), ExtResource("4_tg75m"), ExtResource("5_3sm66"), ExtResource("6_gsodn"), ExtResource("8_1or8k"), ExtResource("9_2133o"), ExtResource("10_2133o")])

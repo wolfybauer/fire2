@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDSolidClass" load_steps=2 format=3 uid="uid://binnukaqhn7i4"]
+
+[ext_resource type="Script" uid="uid://5cow84q03m6a" path="res://addons/func_godot/src/fgd/func_godot_fgd_solid_class.gd" id="1_fgt1v"]
+
+[resource]
+script = ExtResource("1_fgt1v")
+classname = "obj_glass"
+description = "Breakable, see-through glass"
+node_class = "Glass"
+metadata/_custom_type_script = "uid://5cow84q03m6a"

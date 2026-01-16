@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bi51vakf1lv8k"]
+
+[ext_resource type="Script" uid="uid://bkua4ygsumdod" path="res://trenchbroom/entities/actors/marsfrog/marsfrog.gd" id="1_qqpyl"]
+[ext_resource type="PackedScene" uid="uid://b63vvdlr5ocvn" path="res://trenchbroom/entities/actors/marsfrog/marsfrog.glb" id="2_ylheg"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ei03m"]
+radius = 0.2
+
+[node name="Marsfrog" type="CharacterBody3D"]
+collision_layer = 6
+collision_mask = 5
+script = ExtResource("1_qqpyl")
+
+[node name="marsfrog" parent="." instance=ExtResource("2_ylheg")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.234049, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+shape = SubResource("SphereShape3D_ei03m")

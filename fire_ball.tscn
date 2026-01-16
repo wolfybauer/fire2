@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cirsfptuec6mx"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_73oji"]
+bounce = 0.7
+
+[sub_resource type="SphereMesh" id="SphereMesh_gregu"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qsv8u"]
+radius = 0.3
+
+[node name="FireBall" type="RigidBody3D" groups=["fade_obj"]]
+mass = 100.0
+physics_material_override = SubResource("PhysicsMaterial_73oji")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_gregu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_qsv8u")
+
+[node name="FireComponent3D" type="FireComponent3D" parent="."]
+torch = true
+max_hp = -1

@@ -1,0 +1,93 @@
+[gd_scene load_steps=7 format=4 uid="uid://cbicy02qbdydk"]
+
+[ext_resource type="Script" uid="uid://cn03mb0y3farw" path="res://addons/destronoi/destronoi.gd" id="1_ee6w8"]
+
+[sub_resource type="GDScript" id="GDScript_61eh1"]
+script/source = "@tool
+extends RigidBody3D
+
+@export var health:int = 100
+@export var persistence:float = 1.0
+@export var size:Vector3 = Vector3.ONE
+@export var items:Array[PackedScene] = []
+
+@onready var fire_component: FireComponent3D = $FireComponent
+@onready var destronoi: DestronoiNode = $Destronoi
+
+const SMOKE_PUFF = preload(\"res://gde_test/assets/fire/smoke_puff.tscn\")
+
+func _ready() -> void:
+	var mesh:MeshInstance3D
+	var col:CollisionShape3D
+	for n in get_children(true):
+		if n is MeshInstance3D:
+			mesh = n
+		if n is CollisionShape3D:
+			col = n
+		if col and mesh: break
+	
+	if mesh: mesh.scale = size
+	if col and col.shape is BoxShape3D:
+		(col.shape as BoxShape3D).size = size
+	mass = size.x * size.y * size.z * max(mass, 10.0) 
+	
+	if not Engine.is_editor_hint():
+		destronoi.persistence = persistence
+		fire_component.damage.connect(func(d):apply_damage(d))
+
+func apply_damage(amt:int, dir:Vector3=Vector3.ZERO):
+	apply_central_impulse(dir*amt)
+	health -= amt
+	if health <= 0:
+		var puff:GPUParticles3D = SMOKE_PUFF.instantiate()
+		get_parent().add_child(puff)
+		puff.add_to_group('fade_obj')
+		puff.global_position = global_position
+		puff.visible = false
+		puff.emitting = true
+		if not items.is_empty():
+			for i in items:
+				var item = i.instantiate()
+				get_parent().add_child(item)
+				(item as Node3D).global_position = global_position
+				
+		destronoi.destroy(2.0, dir*amt)
+		
+"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5f50o"]
+load_path = "res://.godot/imported/crate_small_short_crate_diff.png-e8e93af0df4488fb7fff8e289e9893b6.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mxw8v"]
+albedo_texture = SubResource("CompressedTexture2D_5f50o")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_o2x0i"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"attribute_data": PackedByteArray("AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/"),
+"format": 34359738391,
+"material": SubResource("StandardMaterial3D_mxw8v"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AAAAvwAAAL8AAAA/AAAAvwAAAL8AAAC/AAAAvwAAAD8AAAC/AAAAPwAAAL8AAAC/AAAAvwAAAL8AAAC/AAAAvwAAAL8AAAA/AAAAvwAAAD8AAAC/AAAAvwAAAL8AAAC/AAAAPwAAAL8AAAC/AAAAvwAAAD8AAAC/AAAAvwAAAD8AAAA/AAAAvwAAAL8AAAA/AAAAvwAAAL8AAAA/AAAAvwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAvwAAAD8AAAA/AAAAvwAAAD8AAAC/AAAAvwAAAL8AAAA/AAAAPwAAAL8AAAA/AAAAPwAAAL8AAAC/AAAAPwAAAD8AAAA/AAAAPwAAAL8AAAA/AAAAvwAAAL8AAAA/AAAAPwAAAL8AAAC/AAAAPwAAAL8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAL8AAAC/AAAAPwAAAD8AAAC/AAAAvwAAAD8AAAC/AAAAvwAAAD8AAAC/AAAAPwAAAD8AAAC/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAC/AAAAPwAAAL8AAAC/AAD/f/9//n8AAP9//3/+fwAA/3//f/5//38AAP//AAD/fwAA//8AAP9/AAD//wAA/////wAA/z//////AAD/P/////8AAP8/AAD/f/9//n8AAP9//3/+fwAA/3//f/5//3//fwAA/z//f/9/AAD/P/9//38AAP8//3//////AAD/f/////8AAP9//////wAA/38AAP//AAD/fwAA//8AAP9/AAD//wAA/3//fwAA/z//f/9/AAD/P/9//38AAP8/////f/9//n////9//3/+f////3//f/5//////wAA/z//////AAD/P/////8AAP8//3//////AAD/f/////8AAP9//////wAA////f/9//n////9//3/+f////3//f/5/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mxw8v"]
+resource_local_to_scene = true
+
+[node name="WoodenCrate" type="RigidBody3D" groups=["fade_obj"]]
+script = SubResource("GDScript_61eh1")
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_o2x0i")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_mxw8v")
+
+[node name="Destronoi" type="DestronoiNode" parent="."]
+script = ExtResource("1_ee6w8")
+tree_height = 4
+
+[node name="FireComponent" type="FireComponent3D" parent="."]
+resolution = Vector3i(2, 2, 2)

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDSolidClass" load_steps=2 format=3 uid="uid://boja1jur24s2h"]
+
+[ext_resource type="Script" uid="uid://5cow84q03m6a" path="res://addons/func_godot/src/fgd/func_godot_fgd_solid_class.gd" id="1_ntqcl"]
+
+[resource]
+script = ExtResource("1_ntqcl")
+classname = "fade_wall"
+description = "Fadeable block"
+node_class = "FadeWall3D"
+metadata/_custom_type_script = "uid://5cow84q03m6a"
